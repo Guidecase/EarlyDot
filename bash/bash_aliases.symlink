@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# User
+
+alias mkpw='openssl rand -base64 12'
+
+# Filesystem
+
+alias ls='ls --color=auto'
+alias ll='ls -l'
+alias la='ls -la'
+
+alias pgrep='ps aux | grep'
+
+# Git 
+
+### working commands
+
+alias ga='git add'
+alias gc='git commit'
+alias gcam='git commit -am'
+alias gp='git push origin HEAD'
+alias gpo='git push origin'
+alias gco='git checkout'
+alias gl='git pull --prune'
+alias gb='git branch'
+alias gm='git merge --no-ff'
+
+### information
+
+alias gs='git status'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+
+### development workflow
+
+alias gup="git checkout master && git merge --no-ff development && git push origin && git checkout development"
+alias gdwn="git checkout master && git pull origin master && git checkout development && git rebase master"
+
+# Bundler
+
+alias bl="bundle list"
+alias bu="bundle update"
+alias bi="bundle install"
+alias bo="bundle open"
+alias bs="bundle show"
+alias bui="bundle update && bundle install"
+
+# Homebrew
+
+alias brv="brew --version"
+alias brl="brew list"
+alias brc="brew cat"
+alias brn="brew info"
+alias bri="brew install"
