@@ -1,1 +1,4 @@
 #!/bin/bash
+
+export EARLYDOT_PROJECT_DIR="$HOME/Dev"
+export EARLYDOT_DOTFILES_DIR="$EARLYDOT_PROJECT_DIR/earlydot"

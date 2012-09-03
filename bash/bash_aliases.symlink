@@ -1,12 +1,14 @@
 #!/bin/bash
 
+alias earlydot-update='cd $EARLYDOT_DOTFILES_DIR && gp'
+alias earlydot-reload='. ~/.bashrc'
+
 # User
 
 alias mkpw='openssl rand -base64 12'
 
 # Filesystem
 
-alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -la'
 

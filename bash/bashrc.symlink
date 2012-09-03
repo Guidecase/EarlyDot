@@ -7,10 +7,11 @@ export HISTSIZE=10000         # save 10000 items in history
 
 # Source additional files
 
+. ~/.bash_env
 . ~/.bash_aliases
 
 ### Source private ~/.developer file (for sensitive env info, keys, customizations, etc.)
 DEVELOPER_FILE=~/.developer
 if [ -e $DEVELOPER_FILE ]; then
-  . DEVELOPER_FILE
+  . $DEVELOPER_FILE
 fi
