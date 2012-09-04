@@ -9,6 +9,7 @@ export HISTSIZE=10000         # save 10000 items in history
 
 . ~/.bash_env
 . ~/.bash_aliases
+. ~/.bash_commands
 
 ### Source private ~/.developer file (for sensitive env info, keys, customizations, etc.)
 DEVELOPER_FILE=~/.developer

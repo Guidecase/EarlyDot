@@ -1,8 +1,5 @@
 #!/bin/bash
 
-alias earlydot-update='cd $EARLYDOT_DOTFILES_DIR && gp'
-alias earlydot-reload='. ~/.bashrc'
-
 # User
 
 alias mkpw='openssl rand -base64 12'
@@ -37,6 +34,11 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C
 
 alias gup="git checkout master && git merge --no-ff development && git push origin && git checkout development"
 alias gdwn="git checkout master && git pull origin master && git checkout development && git rebase master"
+
+function gdirty {
+  GDIRTY=0
+  [[ $(git diff --shortstat 2> /dev/null | tail -n1) != "" ]] && GDIRTY=1
+}
 
 # Bundler
 
