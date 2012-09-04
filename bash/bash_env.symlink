@@ -3,5 +3,18 @@
 export EARLYDOT_PROJECT_DIR="$HOME/Dev"
 export EARLYDOT_DOTFILES_DIR="$EARLYDOT_PROJECT_DIR/earlydot"
 
+# define repos for sync with earlydot-sync command
 declare -a EARLYDOT_REPOSITORIES
 EARLYDOT_REPOSITORIES[0]=$EARLYDOT_DOTFILES_DIR
+
+# use available text editor
+if [ -d "/Applications/Sublime Text 2.app" ]; then
+  export EDITOR=subl
+  export BUNDLER_EDITOR=subl
+elif [ -d "/Applications/TextMate.app" ]; then 
+  export EDITOR=mate
+  export BUNDLER_EDITOR=mate	
+else
+  export EDITOR=nano
+  export BUNDLER_EDITOR=nano
+fi

@@ -11,6 +11,8 @@ alias la='ls -la'
 
 alias pgrep='ps aux | grep'
 
+alias cdp='cd $EARLYDOT_PROJECT_DIR'
+
 # Git 
 
 ### working commands
