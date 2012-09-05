@@ -1,6 +1,6 @@
 #!/bin/bash
 
-alias earlydot-reload='source ~/.bashrc && ~/.developer'
+alias earlydot-reload='source ~/.bashrc'
 
 function earlydot-sync {
   echo "Syncing repositories with github..."

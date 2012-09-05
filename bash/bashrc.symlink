@@ -4,6 +4,7 @@
 
 export HISTCONTROL=erasedups  # remove duplicate entries in the history
 export HISTSIZE=10000         # save 10000 items in history
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help" # exclude uninteresting commands from history
 
 # Source additional files
 

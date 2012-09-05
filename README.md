@@ -19,6 +19,7 @@ After the installation completes, the $HOME directory will include the following
     .bashrc -> ~/Dev/earlydot/bash/bashrc.symlink
     .developer
     .gitignore_global -> ~/Dev/earlydot/git/gitignore_global.symlink
+    .hushlogin -> ~/Dev/earlydot/git/hushlogin.symlink    
 
 ### Administration
 
@@ -26,7 +27,7 @@ Several helper functions exist to ease the administration of dotfile changes, as
 
 **Reload**
 
-The reload command re-sources the various dotfiles (including `.developer`):
+The reload command re-sources the various dotfiles:
 
     earlydot-reload
 
