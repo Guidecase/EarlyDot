@@ -38,7 +38,7 @@ alias gp='git push origin HEAD'
 alias gpo='git push origin'
 alias gco='git checkout'
 alias gl='git pull --prune'
-alias gb='git branch'
+alias gb='git branch -a'
 alias gm='git merge --no-ff'
 
 ### information
@@ -72,3 +72,8 @@ alias brl="brew list"
 alias brc="brew cat"
 alias brn="brew info"
 alias bri="brew install"
+
+# NPM (node package manager)
+
+alias npml="npm list"
+alias npmi="npm install"
