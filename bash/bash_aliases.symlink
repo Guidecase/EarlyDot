@@ -77,3 +77,7 @@ alias bri="brew install"
 
 alias npml="npm list"
 alias npmi="npm install"
+
+# Siege (load testing app - installed from the /utils shell script)
+
+alias siege100=siege -c 100 -r 10 -b 
