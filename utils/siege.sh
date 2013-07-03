@@ -3,7 +3,7 @@
 ########## Download and extract package
 
 cd ~/
-curl -C - -O http://www.joedog.org/pub/siege/siege-latest.tar.gz
+curl -L -C - -O http://www.joedog.org/pub/siege/siege-latest.tar.gz
 tar -xvf siege-latest.tar.gz
 cd siege-*
 

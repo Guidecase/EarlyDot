@@ -28,7 +28,6 @@ Thumbs.db
 
 ############# Rails
 
-*.gem
 *.rbc
 *.rspec
 .bundle

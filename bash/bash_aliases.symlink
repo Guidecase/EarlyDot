@@ -65,6 +65,10 @@ alias bo="bundle open"
 alias bs="bundle show"
 alias bui="bundle update && bundle install"
 
+# Capistrano
+
+alias bcap="bundle exec cap"
+
 # Homebrew
 
 alias brv="brew --version"
@@ -80,4 +84,7 @@ alias npmi="npm install"
 
 # Siege (load testing app - installed from the /utils shell script)
 
-alias siege100=siege -c 100 -r 10 -b 
+alias sige="siege -c 100 -r 10 -b"
+
+# Sitespeed.io (web performance crawler via yslow)
+alias sitespeed="~/sitespeed*/sitespeed.io -u"
